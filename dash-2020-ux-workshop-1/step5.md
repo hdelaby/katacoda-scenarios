@@ -1,12 +1,13 @@
-# CI/CD
+Now that we have configured the Browser Test to make it run from various locations regularly, it is time to record the actual test.
 
-The synthetics test run at most every 5 minutes.
-Which mean a breaking change would be live during these 5 minutes before being caught by a test.
-To catch regressions even before they are live, we can trigger the synthetics test during the CI/CD pipeline.
+1. If you have never used Datadog's Test Recorder before, you will have to [download the Google Chrome extension](https://chrome.google.com/webstore/detail/datadog-test-recorder/kkbncfpddhdmkfmalecgnphegacgejoa). The extension is only available in Google Chrome.
+2. Going back to your Test Recorder tab, you should now see the website rendered on the right part of the screen.
+3. Click on "Start Recording" and then use the e-commerce web application like any user would:
+   a. Click on a product
+   b. Add it to your cart
+   c. Proceed to checkout
+   d. Proceed to payment
+4. At the end, create an assertion that "Successful purchase" is available on the screen.
+5. Your test is ready! Click "Save & Launch Test"
 
-> TODO write a script to trigger the previously recorded synthetics test as CI, with an overriden start url pointing to a staging env, or a temporary env: https://docs.datadoghq.com/synthetics/ci/?tab=npm
-Then setup this hook as part of the Fake CI/CD pipeline on the pre-push.
-Finally, redeploy a regression to see it fail, and skipping the deploy.
-
-# Dive more: private location
-If you want to run synthetics tests during the CI/CD of your staging environment, which might not be publicly available, it's possible to setup a private location within your infrastructure from which to run synthetics tests on private sites, e.g. your staging environment.
+After up to a few minutes, your results should arrive. As expected, the checkout flow works just fine. We will now be alerted whenever our flow breaks.
