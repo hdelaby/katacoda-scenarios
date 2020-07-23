@@ -7,5 +7,5 @@ while [ ! -f /root/app-files/docker-compose-files/docker-compose-fixed-instrumen
 cd /root/app-files/docker-compose-files
 clear
 docker-compose -f docker-compose-fixed-instrumented.yml up -d
+cd ..
 clear
-prep-environment
