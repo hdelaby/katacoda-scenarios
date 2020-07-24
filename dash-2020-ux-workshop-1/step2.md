@@ -8,7 +8,8 @@ Now that you've familiarized yourself with the e-commerce web application we wil
 3. Give your application a name and click **Generate Client Token**. Your application is now created and you have access to the set up instructions.
 4. For this workshop, we use the Bundle installation method. Copy the code containing your application ID and client token. ![instructions RUM](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/Z4uY0R0R/Image%202020-07-21%20at%202.29.52%20PM.png?v=e9cfcd8697b50d9102e75353a5499a4e)
 
-5. Open `store-frontend-instrumented-fixed/frontend/app/views/spree/layouts/spree_application.html.erb`{{open}} and paste the code at the top of the `<head></head>` section. ```
+5. Open `store-frontend-instrumented-fixed/frontend/app/views/spree/layouts/spree_application.html.erb`{{open}} and paste the code at the top of the `<head></head>` section. 
+```
 <script
     src="https://www.datadoghq-browser-agent.com/datadog-rum-us.js"
     type="text/javascript">
@@ -23,7 +24,7 @@ Now that you've familiarized yourself with the e-commerce web application we wil
 </script>
 ```{{copy}}
 
-6. Relaunch the app. RUM is installed.
+1. Relaunch the app. RUM is installed.
 
 Starting from now, all the traffic coming to your website is monitored. Before we jump and have a look at what RUM teaches us, let's record our first synthetic browser test!
 
