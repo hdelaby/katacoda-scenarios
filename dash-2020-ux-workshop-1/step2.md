@@ -4,8 +4,14 @@ Now that you've familiarized yourself with the e-commerce web application we wil
 
 1. Go to [Datadog RUM section](https://app.datadoghq.com/rum/list)
 2. Click on "New Application"
+
+![empty RUM list](https://a.cl.ly/X6uow11L)
+
 3. Give your application a name and click "Generate Client Token". Your application is now created and you have access to the set up instructions.
 4. For this workshop, we use the Bundle installation method. Copy the code containing your application ID and client token.
+
+![instructions RUM](https://a.cl.ly/Z4uY0R0R)
+
 5. Open `store-frontend-instrumented-fixed/frontend/app/views/spree/layouts/spree_application.html.erb`{{open}} and paste the code at the top of the `<head></head>` section.
 6. Relaunch the app. RUM is installed.
 
