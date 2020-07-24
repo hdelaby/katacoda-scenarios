@@ -14,18 +14,18 @@ Now that you've familiarized yourself with the e-commerce web application we wil
 
 5. Open `store-frontend-instrumented-fixed/frontend/app/views/spree/layouts/spree_application.html.erb`{{open}} and paste the code at the top of the `<head></head>` section.
 <pre class="file" data-filename="store-frontend-instrumented-fixed/frontend/app/views/spree/layouts/spree_application.html.erb" data-target="insert"  data-marker="<!-- RUM Placeholder -->">
-   <script
-        src="https://www.datadoghq-browser-agent.com/datadog-rum-us.js"
-        type="text/javascript">
-    </script>
-    <script>
-        window.DD_RUM && window.DD_RUM.init({
-            clientToken: 'YOUR CLIENT TOKEN',
-            applicationId: 'YOUR APPLICATION ID',
-            sampleRate: 100,
-            trackInteractions: true
-        });
-    </script>
+<script
+    src="https://www.datadoghq-browser-agent.com/datadog-rum-us.js"
+    type="text/javascript">
+</script>
+<script>
+    window.DD_RUM && window.DD_RUM.init({
+        clientToken: 'YOUR CLIENT TOKEN',
+        applicationId: 'YOUR APPLICATION ID',
+        sampleRate: 100,
+        trackInteractions: true
+    });
+</script>
 </pre>
 
 7. Relaunch the app. RUM is installed.
