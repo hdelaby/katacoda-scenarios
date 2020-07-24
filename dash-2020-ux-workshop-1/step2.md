@@ -13,7 +13,7 @@ Now that you've familiarized yourself with the e-commerce web application we wil
 ![instructions RUM](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/Z4uY0R0R/Image%202020-07-21%20at%202.29.52%20PM.png?v=e9cfcd8697b50d9102e75353a5499a4e)
 
 5. Open `store-frontend-instrumented-fixed/frontend/app/views/spree/layouts/spree_application.html.erb`{{open}} and paste the code at the top of the `<head></head>` section.
-<pre class="file" data-filename="store-frontend-instrumented-fixed/frontend/app/views/spree/layouts/spree_application.html.erb" data-target="insert"  data-marker="<!-- RUM Placeholder -->">
+<pre class="file" data-target="clipboard">
 <script
     src="https://www.datadoghq-browser-agent.com/datadog-rum-us.js"
     type="text/javascript">
@@ -28,7 +28,7 @@ Now that you've familiarized yourself with the e-commerce web application we wil
 </script>
 </pre>
 
-7. Relaunch the app. RUM is installed.
+1. Relaunch the app. RUM is installed.
 
 Starting from now, all the traffic coming to your website is monitored. Before we jump and have a look at what RUM teaches us, let's record our first synthetic browser test!
 
