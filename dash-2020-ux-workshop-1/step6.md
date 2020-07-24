@@ -1,5 +1,3 @@
-# Deploying a commit that unexpectedly breaks our checkout flow
-
 As the e-commerce web application grows, multiple teams start working on the codebase. The risk of introducing regressions becomes higher and this cannot be avoided. However, being alerted whenever our critical user flows break gives engineers more confidence when deploying new changes.
 
 1. Switch to the `broken_checkout` branch to simulate a new deploy: `git checkout broken_checkout`.

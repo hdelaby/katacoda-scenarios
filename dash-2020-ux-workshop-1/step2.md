@@ -1,5 +1,3 @@
-# Install Real User Monitoring
-
 Now that you've familiarized yourself with the e-commerce web application we will be working on, it is time to get started with Real User Monitoring. The first step is to create our first RUM application.
 
 1. Go to [Datadog RUM section](https://app.datadoghq.com/rum/list)
