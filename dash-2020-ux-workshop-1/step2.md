@@ -22,7 +22,7 @@ Now that you've familiarized yourself with the e-commerce web application we wil
 </script>
 ```{{copy}}
 
-1. Relaunch the app. RUM is installed.
+6. `docker-compose -f docker-compose-fixed-instrumented.yml up -d`{{execute}}
 
 Starting from now, all the traffic coming to your website is monitored. Before we jump and have a look at what RUM teaches us, let's record our first synthetic browser test!
 
