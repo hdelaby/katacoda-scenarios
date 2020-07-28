@@ -11,3 +11,5 @@ Now that we have configured the Browser Test to make it run from various locatio
 5. Your test is ready! Click "Save & Launch Test"
 
 After up to a few minutes, your results should arrive. As expected, the checkout flow works just fine. We will now be alerted whenever our flow breaks.
+
+![successful browser test](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/2NuyYB1D/Image%202020-07-28%20at%202.33.19%20PM.png?v=633f9d210e887e172923812fe10eb0b3)
