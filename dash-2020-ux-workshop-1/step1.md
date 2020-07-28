@@ -1,7 +1,7 @@
 
 Our legacy shop uses Ruby on Rails and Spree. 
 
-We use `docker-compose` to bring it up and running. There's a prebuilt Rails Docker container image, along with a few Python / Flask microservice which handle our Coupon codes and Ads which run on the store.
+There's a prebuilt Rails Docker container image, along with a few Python / Flask microservice which handle our Coupon codes and Ads which run on the store.
 
 ![spree website](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/KouBpG7R/Image%202020-07-22%20at%205.33.01%20PM.png?v=d25a745e18a4835ca05ae1452ca1c42b)
 
