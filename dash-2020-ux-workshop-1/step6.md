@@ -7,3 +7,5 @@ As the e-commerce web application grows, multiple teams start working on the cod
 ![browser test fails](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/4gu9Qm8N/Image%202020-07-28%20at%202.53.16%20PM.png?v=61273d7f5196f70deb1dd6101fc294fa)
 
 ![browser test failure screenschot](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/GGuRnNev/Image%202020-07-28%20at%202.53.35%20PM.png?v=86f5a6a60cd2baa5fd84c1c30fd3e409)
+
+Look at the result and the screenshots. They show us that the problem comes directly from the **Add To Cart** button. In this scenario, we will not resolve this issue but we have all the elements to identify the source of the bug.
