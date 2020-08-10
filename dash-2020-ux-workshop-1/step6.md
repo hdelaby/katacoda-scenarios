@@ -8,6 +8,6 @@ One of the big advantage of Real User Monitoring is all the information it colle
 
 4. On top of all the default attributes (geolocation data, browser information, OS details...) you should be able to find a `handle` attribute containing the value `john@storedog.com`.
 
-5. Click on the attribute and then on **Create facet for @usr.handle** ![create facet](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/p9uG5veG/Image%202020-08-10%20at%205.28.50%20PM.png?v=5ceedc50ecb3bfd0c34350f2ad6ab4a7)
+5. Click on the attribute and then on **Create facet for @usr.handle**. If you click on Advanced, you will be able to rename the Display Name to "User Handle". ![create facet](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/p9uG5veG/Image%202020-08-10%20at%205.28.50%20PM.png?v=5ceedc50ecb3bfd0c34350f2ad6ab4a7)
 
 Every time you add a global context attribute in RUM, create a facet to be able to filter the data in the RUM Explorer, monitors and dashboards.
