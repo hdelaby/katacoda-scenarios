@@ -6,39 +6,45 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Introduction",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Real User Monitoring set up",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Getting to know Storedog",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Discovering the RUM interface",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Your first RUM Monitor",
         "text": "step5.md"
       },{
-        "title": "Step 6",
+        "title": "Using RUM Global Context",
         "text": "step6.md"
       },{
-        "title": "Step 7",
+        "title": "Synthetic Tests introduction",
         "text": "step7.md"
       },{
-        "title": "Step 8",
+        "title": "Test metadata",
         "text": "step8.md"
       },{
-        "title": "Step 9",
+        "title": "Recording the test",
         "text": "step9.md"
       },{
-        "title": "Step 10",
+        "title": "Detect a regression with Synthetics",
         "text": "step10.md"
+      },{
+        "title": "Focusing our front-end efforts with RUM",
+        "text": "step11.md"
+      },{
+        "title": "Debugging performance issues",
+        "text": "step12.md"
       }
     ],
     "intro": {

@@ -1,12 +1,13 @@
-Now let's have a look at the data collected by Real User Monitoring.
+As the e-commerce web application grows, multiple teams start working on the codebase. The risk of introducing regressions becomes higher and this cannot be avoided. However, being alerted whenever our critical user flows break gives engineers more confidence when deploying new changes.
 
-1. Go to [Datadog Real User Monitoring section](https://app.datadoghq.com/rum/list)
-2. Click on **Explorer** right now to your application
-3. Filter the pages by descending Loading Time
-4. Click on the first row
+1. Run `docker-compose -f docker-compose-broken-instrumented.yml up -d`{{execute}}
 
-![RUM explorer side panel](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/YEuoGpQg/Screen%20Shot%202020-07-29%20at%202.13.55%20PM.png?v=190bf38a7b25d3a17b4cc77494f7e079)
+2. Go to your synthetics Browser Test result page and either wait for the new batch or click on **Run Test Now** in the top-right corner.
 
-The performance tab and its waterfall help you understand what the page load was for your end user standpoint. There are plenty of information to look at: performance timings, the nature of resources being loading along with their size, the performance of the initial document, etc...
+3. Wait for the test to fail in the interface.
 
-In this example, we see the first request is very long. If we hover on it, the Time to **First Byte** is where most of the time is spent. That indicates a poor performing server handling the page requests and this is definitely something to look into!
+![browser test fails](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/4gu9Qm8N/Image%202020-07-28%20at%202.53.16%20PM.png?v=61273d7f5196f70deb1dd6101fc294fa)
+
+![browser test failure screenschot](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/GGuRnNev/Image%202020-07-28%20at%202.53.35%20PM.png?v=86f5a6a60cd2baa5fd84c1c30fd3e409)
+
+Look at the result and the screenshots. They show us that the problem comes directly from the **Add To Cart** button. In this scenario, we will not resolve this issue but we have all the elements to identify the source of the bug.

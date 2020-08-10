@@ -1,3 +1,5 @@
-1. Paste `https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com/`{{copy}} in the Starting URL field.
-2. We will name this test **Checkout Flow**, make it run on **Laptop Large** on a single location of your choice every 5 minutes. Write down a message containing your email in the last section if you want to be alerted whenever the test fails.
-3. Click **Save Details & Record Test**
+Now that RUM is set up, let's focus on our web application reliability. On Storedog, the checkout flow is the most crucial user flow. Users not being able to order massively impacts the business. Our objective is to create a browser test that will regularly check the availability of the checkout flow.
+
+1. Go to [Datadog Synthetics section](https://app.datadoghq.com/synthetics/list) ![empty synthetics list](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/jkuQbbJ7/Image%202020-07-21%20at%203.07.30%20PM.png?v=c6dc1df341334669a0cb6fb71ab6ce8e)
+
+2. Click on **Get Started** and then **New Browser Test** ![browser or api test](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/RBuqQQPZ/Image%202020-07-21%20at%203.07.44%20PM.png?v=08b0acb2e08da33afd3e2c43eb6f271a)
