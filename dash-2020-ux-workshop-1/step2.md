@@ -6,7 +6,7 @@ Let's install Real User Monitoring on our web application before launching every
 
 3. Give your application a name and click **Generate Client Token**. Your application is now created and you have access to the set up instructions.
    
-4. For this workshop, we use the Bundle installation method. Everytime a user will be here,  ![instructions RUM](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/Z4uY0R0R/Image%202020-07-21%20at%202.29.52%20PM.png?v=e9cfcd8697b50d9102e75353a5499a4e)
+4. For this workshop, we use the Bundle installation method. This will load the RUM SDK everytime a page gets loaded. ![instructions RUM](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/Z4uY0R0R/Image%202020-07-21%20at%202.29.52%20PM.png?v=e9cfcd8697b50d9102e75353a5499a4e)
 
 5. If you look inside `store-frontend-instrumented-fixed/frontend/app/views/spree/layouts/spree_application.html.erb`{{open}}, you will see that the code already contains RUM installed. We will only need to set our environment variables.
    
