@@ -1,5 +1,5 @@
 
-Our legacy shop uses Ruby on Rails and Spree. 
+Congratulations for your new position at Storedog! The legacy e-commerce application uses Ruby on Rails and Spree. 
 
 There's a prebuilt Rails Docker container image, along with a few Python / Flask microservice which handle our Coupon codes and Ads which run on the store.
 
@@ -9,4 +9,4 @@ In this workshop, we're going to spin up and instrument our application to see w
 
 We'll focus on thinking through what observability might make sense in a real application, and see how setting up observability works in practice.
 
-Before launching our web application, let's create our first RUM application in Datadog.
+Before launching our web application, let's create our first RUM application in Datadog and set it up.

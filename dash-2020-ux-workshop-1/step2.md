@@ -16,6 +16,6 @@ Let's install Real User Monitoring on our web application before launching every
    
 Now let's get this web application running! `docker-compose -f docker-compose-fixed-instrumented.yml up -d`{{execute}}
 
-Starting from now, all the traffic coming to your website is monitored, and our web application is accessible. Spend some time discovering what it looks like before going further: https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com/
+Starting from now, all the traffic coming to Storedog is monitored, and the web application is accessible. Let's see what data gets collected!
 
 **Note:** Many initialization parameters can be used when setting up RUM. More information is available in the [documentation](https://docs.datadoghq.com/real_user_monitoring/installation/?tab=us#initialization-parameters).

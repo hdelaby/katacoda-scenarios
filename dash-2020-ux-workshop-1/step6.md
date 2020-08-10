@@ -1,11 +1,5 @@
-As the e-commerce web application grows, multiple teams start working on the codebase. The risk of introducing regressions becomes higher and this cannot be avoided. However, being alerted whenever our critical user flows break gives engineers more confidence when deploying new changes.
+Now that RUM is set up, let's focus on our web application reliability. On Storedog, the checkout flow is the most crucial user flow. Users not being able to order massively impacts the business. Our objective is to create a browser test that will regularly check the availability of the checkout flow.
 
-1. Run `docker-compose -f docker-compose-broken-instrumented.yml up -d`{{execute}}
-2. Go to your synthetics Browser Test result page and either wait for the new batch or click on **Run Test Now** in the top-right corner.
-3. Wait for the test to fail in the interface.
+1. Go to [Datadog Synthetics section](https://app.datadoghq.com/synthetics/list) ![empty synthetics list](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/jkuQbbJ7/Image%202020-07-21%20at%203.07.30%20PM.png?v=c6dc1df341334669a0cb6fb71ab6ce8e)
 
-![browser test fails](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/4gu9Qm8N/Image%202020-07-28%20at%202.53.16%20PM.png?v=61273d7f5196f70deb1dd6101fc294fa)
-
-![browser test failure screenschot](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/GGuRnNev/Image%202020-07-28%20at%202.53.35%20PM.png?v=86f5a6a60cd2baa5fd84c1c30fd3e409)
-
-Look at the result and the screenshots. They show us that the problem comes directly from the **Add To Cart** button. In this scenario, we will not resolve this issue but we have all the elements to identify the source of the bug.
+2. Click on **Get Started** and then **New Browser Test** ![browser or api test](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/RBuqQQPZ/Image%202020-07-21%20at%203.07.44%20PM.png?v=08b0acb2e08da33afd3e2c43eb6f271a)

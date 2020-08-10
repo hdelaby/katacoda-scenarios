@@ -1,5 +1,7 @@
-Now that RUM is set up, let's focus on our web application reliability. In this e-commerce web application, the checkout flow is the most crucial user flow. Users not being able to order massively impacts the business. Our objective is to create a browser test that will regularly check the availability of our checkout flow.
+As part of this workshop, your Storedog instance is unique and it is unlikely someone else is going to visit it. We will perform a few actions on the website to get some data to look at in RUM. Later on, you will see how Synthetic Tests can create a predictable traffic flow.
 
-1. Go to [Datadog Synthetics section](https://app.datadoghq.com/synthetics/list) ![empty synthetics list](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/jkuQbbJ7/Image%202020-07-21%20at%203.07.30%20PM.png?v=c6dc1df341334669a0cb6fb71ab6ce8e)
+1. Visit https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com/
+2. Go on a product page, add the product to the cart.
+3. Once on the cart page, remove this item from the cart and go back to the homepage.
 
-2. Click on **Get Started** and then **New Browser Test** ![browser or api test](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/RBuqQQPZ/Image%202020-07-21%20at%203.07.44%20PM.png?v=08b0acb2e08da33afd3e2c43eb6f271a)
+Let's see what it looks like in Datadog.

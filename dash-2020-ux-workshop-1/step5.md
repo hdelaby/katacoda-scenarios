@@ -1,17 +1,7 @@
-Now that we have configured the Browser Test metadata, it is time to record the actual test.
+We will create a monitor alerting us whenever the `add_item` API endpoint responds in more than 500ms on average from our users perspective.
 
-1. If you have never used Datadog's Test Recorder before, you will have to [download the Google Chrome extension](https://chrome.google.com/webstore/detail/datadog-test-recorder/kkbncfpddhdmkfmalecgnphegacgejoa). The extension is only available in Google Chrome.
-2. Going back to your Test Recorder tab, you should now see the website rendered on the right part of the screen.
-3. Click on **Start Recording** and then use the e-commerce web application like any user would:
-      1. Click on a product
-      2. Add it to your cart
-      3. Proceed to checkout
-      4. Proceed to payment
-4. At the end, create an assertion that **Successful purchase** is available on the screen.
-5. Your test is ready! Click **Save & Launch Test**
+1. Head to https://app.datadoghq.com/monitors?agg_metric=log_duration&agg_type=avg&query=%2540http.url_details.path%253A%2522%252Fapi%252Fv2%252Fstorefront%252Fcart%252Fadd_item%2522%2520%2540evt.category%253Aresource#create/rum. The query is already filled in. We measure the duration of one specific resource URL path.
+2. In the alert conditions, we set the alert treshold to `400000000`{{copy}} (400ms) for the last 5 minutes.
+3. Enter a title and a message containing your email address to receive a notification whenever the performance degrades.
 
-After up to a few minutes, your results should arrive. As expected, the checkout flow works just fine. We will now be alerted whenever our flow breaks.
-
-![successful browser test](https://p-qKFgO2.t2.n0.cdn.getcloudapp.com/items/2NuyYB1D/Image%202020-07-28%20at%202.33.19%20PM.png?v=633f9d210e887e172923812fe10eb0b3)
-
-Look at the result closely. You will notice that for each step, resources and errors are collected, as well as a screenshot. This is very helpful to understand what is going wrong when a test fails.
+Congratulations, you created your first monitor based off RUM data.
